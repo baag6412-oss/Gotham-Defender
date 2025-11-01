@@ -5,3 +5,53 @@
     --grey: #39464c;
     --font-family: "Work Sans";
 }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    cursor: url("./images/batarang.png") 16 16, auto;
+}
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    gap: 20px;
+    background-image: url("/images/background.jpg");
+    background-size: cover;
+}
+h1,
+h2 {
+    color: antiquewhite;
+    margin: 0;
+}
+#board {
+    width: 460px;
+    height: 460px;
+    border-radius: 28px;
+    border: 2px solid black;
+    background-size: cover;
+    background-image: url("./images/grey.jpg");
+    gap: 10px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+#board div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 145px;
+    height: 145px;
+    background-image: url("./images/door.png");
+    background-size: cover;
+}
+#board div img {
+    width: 100px;
+    height: 128px;
+    pointer-events: none;
+    user-select: none;
+}
